@@ -1,0 +1,4 @@
+Django==1.11.12
+PyMySQL==0.8.1
+pytz==2018.4
+requirements==0.1
