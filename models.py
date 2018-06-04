@@ -94,7 +94,6 @@ class Banner(models.Model):
         return self.title
 
 
-
 class Category(models.Model):
     cate_id = models.AutoField('分类ID',
                                primary_key=True)
@@ -107,7 +106,6 @@ class Category(models.Model):
         db_table = 'category'
         verbose_name = '分类菜单'
         verbose_name_plural = '菜单管理'
-
 
 
 class Shop(models.Model):
@@ -154,7 +152,7 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_code
-        
+
     class Meta:
         db_table = 'order'
         verbose_name = '订单'
@@ -245,4 +243,3 @@ class SubMenu2(models.Model):
         db_table = 'sub_menu2'
         verbose_name = '二级菜单'
         verbose_name_plural = '二级菜单管理'
-        
